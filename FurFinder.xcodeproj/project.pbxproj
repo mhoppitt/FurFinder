@@ -7,18 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38063CA72D39D505002C7126 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38063CA62D39D505002C7126 /* SearchBar.swift */; };
+		38063CA92D39FEA4002C7126 /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38063CA82D39FEA4002C7126 /* CapsuleView.swift */; };
+		38063CAB2D3A3EA8002C7126 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38063CAA2D3A3EA8002C7126 /* Completion.swift */; };
+		383C6E6B2D3502710096930F /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 383C6E6A2D3502710096930F /* AWSS3 */; };
 		383F6B7F2D2B9A520019A6E9 /* FurFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6B7E2D2B9A520019A6E9 /* FurFinderApp.swift */; };
 		383F6B812D2B9A520019A6E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6B802D2B9A520019A6E9 /* ContentView.swift */; };
 		383F6B832D2B9A550019A6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383F6B822D2B9A550019A6E9 /* Assets.xcassets */; };
 		383F6B862D2B9A550019A6E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383F6B852D2B9A550019A6E9 /* Preview Assets.xcassets */; };
+		383F6B922D2B9DDF0019A6E9 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 383F6B912D2B9DDF0019A6E9 /* AWSDynamoDB */; };
+		383F6B942D2B9DDF0019A6E9 /* AWSSNS in Frameworks */ = {isa = PBXBuildFile; productRef = 383F6B932D2B9DDF0019A6E9 /* AWSSNS */; };
+		383F6B992D2B9F6D0019A6E9 /* FurFinderBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6B982D2B9F6D0019A6E9 /* FurFinderBreed.swift */; };
+		383F6B9B2D2BA3AF0019A6E9 /* BreedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6B9A2D2BA3AF0019A6E9 /* BreedsService.swift */; };
+		383F6B9E2D2BA3F40019A6E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6B9D2D2BA3F40019A6E9 /* Secrets.swift */; };
+		383F6BA42D2BBCB20019A6E9 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6BA32D2BBCB20019A6E9 /* HomePageView.swift */; };
+		383F6BA62D2BBCEA0019A6E9 /* BreedPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6BA52D2BBCEA0019A6E9 /* BreedPageView.swift */; };
+		383F6BA82D2BBD150019A6E9 /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6BA72D2BBD150019A6E9 /* BreedView.swift */; };
+		383F6BAB2D2BF7CF0019A6E9 /* CapturedSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6BAA2D2BF7CF0019A6E9 /* CapturedSheetView.swift */; };
+		383F6BAD2D2BF9F80019A6E9 /* AddBreedSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F6BAC2D2BF9F80019A6E9 /* AddBreedSheetView.swift */; };
+		386E37592D7183AE00368086 /* fur-finder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 386E37582D7183AE00368086 /* fur-finder-icon.png */; };
+		386E375F2D718E7D00368086 /* furfinder-breed-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 386E375A2D718E7D00368086 /* furfinder-breed-list.png */; };
+		386E37602D718E7D00368086 /* furfinder-add-breed.png in Resources */ = {isa = PBXBuildFile; fileRef = 386E375B2D718E7D00368086 /* furfinder-add-breed.png */; };
+		386E37612D718E7D00368086 /* furfinder-breed.png in Resources */ = {isa = PBXBuildFile; fileRef = 386E375C2D718E7D00368086 /* furfinder-breed.png */; };
+		386E37622D718E7D00368086 /* furfinder-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 386E375D2D718E7D00368086 /* furfinder-home.png */; };
+		386E37632D718E7D00368086 /* furfinder-walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = 386E375E2D718E7D00368086 /* furfinder-walkthrough.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38063CA62D39D505002C7126 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		38063CA82D39FEA4002C7126 /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
+		38063CAA2D3A3EA8002C7126 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 		383F6B7B2D2B9A520019A6E9 /* FurFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383F6B7E2D2B9A520019A6E9 /* FurFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurFinderApp.swift; sourceTree = "<group>"; };
 		383F6B802D2B9A520019A6E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		383F6B822D2B9A550019A6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383F6B852D2B9A550019A6E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		383F6B982D2B9F6D0019A6E9 /* FurFinderBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurFinderBreed.swift; sourceTree = "<group>"; };
+		383F6B9A2D2BA3AF0019A6E9 /* BreedsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsService.swift; sourceTree = "<group>"; };
+		383F6B9D2D2BA3F40019A6E9 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		383F6BA32D2BBCB20019A6E9 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		383F6BA52D2BBCEA0019A6E9 /* BreedPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedPageView.swift; sourceTree = "<group>"; };
+		383F6BA72D2BBD150019A6E9 /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
+		383F6BAA2D2BF7CF0019A6E9 /* CapturedSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedSheetView.swift; sourceTree = "<group>"; };
+		383F6BAC2D2BF9F80019A6E9 /* AddBreedSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBreedSheetView.swift; sourceTree = "<group>"; };
+		386E37572D7043FE00368086 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		386E37582D7183AE00368086 /* fur-finder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fur-finder-icon.png"; sourceTree = "<group>"; };
+		386E375A2D718E7D00368086 /* furfinder-breed-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "furfinder-breed-list.png"; sourceTree = "<group>"; };
+		386E375B2D718E7D00368086 /* furfinder-add-breed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "furfinder-add-breed.png"; sourceTree = "<group>"; };
+		386E375C2D718E7D00368086 /* furfinder-breed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "furfinder-breed.png"; sourceTree = "<group>"; };
+		386E375D2D718E7D00368086 /* furfinder-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "furfinder-home.png"; sourceTree = "<group>"; };
+		386E375E2D718E7D00368086 /* furfinder-walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "furfinder-walkthrough.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +64,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383C6E6B2D3502710096930F /* AWSS3 in Frameworks */,
+				383F6B942D2B9DDF0019A6E9 /* AWSSNS in Frameworks */,
+				383F6B922D2B9DDF0019A6E9 /* AWSDynamoDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		383C6E692D3502710096930F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		383F6B722D2B9A520019A6E9 = {
 			isa = PBXGroup;
 			children = (
+				386E37572D7043FE00368086 /* README.md */,
+				386E37562D7043B000368086 /* docs */,
 				383F6B7D2D2B9A520019A6E9 /* FurFinder */,
 				383F6B7C2D2B9A520019A6E9 /* Products */,
+				383C6E692D3502710096930F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +102,10 @@
 		383F6B7D2D2B9A520019A6E9 /* FurFinder */ = {
 			isa = PBXGroup;
 			children = (
+				383F6BA12D2BBC510019A6E9 /* Components */,
+				383F6BA22D2BBC8B0019A6E9 /* Pages */,
+				383F6B9C2D2BA3E70019A6E9 /* Resources */,
+				383F6B952D2B9F330019A6E9 /* Services */,
 				383F6B7E2D2B9A520019A6E9 /* FurFinderApp.swift */,
 				383F6B802D2B9A520019A6E9 /* ContentView.swift */,
 				383F6B822D2B9A550019A6E9 /* Assets.xcassets */,
@@ -65,6 +120,74 @@
 				383F6B852D2B9A550019A6E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		383F6B952D2B9F330019A6E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				383F6B962D2B9F390019A6E9 /* AWSDynamoDB */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		383F6B962D2B9F390019A6E9 /* AWSDynamoDB */ = {
+			isa = PBXGroup;
+			children = (
+				383F6B972D2B9F400019A6E9 /* Tables */,
+				383F6B9A2D2BA3AF0019A6E9 /* BreedsService.swift */,
+			);
+			path = AWSDynamoDB;
+			sourceTree = "<group>";
+		};
+		383F6B972D2B9F400019A6E9 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				383F6B982D2B9F6D0019A6E9 /* FurFinderBreed.swift */,
+				38063CAA2D3A3EA8002C7126 /* Completion.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		383F6B9C2D2BA3E70019A6E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				383F6B9D2D2BA3F40019A6E9 /* Secrets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		383F6BA12D2BBC510019A6E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				383F6BA72D2BBD150019A6E9 /* BreedView.swift */,
+				383F6BAA2D2BF7CF0019A6E9 /* CapturedSheetView.swift */,
+				383F6BAC2D2BF9F80019A6E9 /* AddBreedSheetView.swift */,
+				38063CA62D39D505002C7126 /* SearchBar.swift */,
+				38063CA82D39FEA4002C7126 /* CapsuleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		383F6BA22D2BBC8B0019A6E9 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				383F6BA32D2BBCB20019A6E9 /* HomePageView.swift */,
+				383F6BA52D2BBCEA0019A6E9 /* BreedPageView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		386E37562D7043B000368086 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				386E375B2D718E7D00368086 /* furfinder-add-breed.png */,
+				386E375A2D718E7D00368086 /* furfinder-breed-list.png */,
+				386E375C2D718E7D00368086 /* furfinder-breed.png */,
+				386E375D2D718E7D00368086 /* furfinder-home.png */,
+				386E375E2D718E7D00368086 /* furfinder-walkthrough.gif */,
+				386E37582D7183AE00368086 /* fur-finder-icon.png */,
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +206,11 @@
 			dependencies = (
 			);
 			name = FurFinder;
+			packageProductDependencies = (
+				383F6B912D2B9DDF0019A6E9 /* AWSDynamoDB */,
+				383F6B932D2B9DDF0019A6E9 /* AWSSNS */,
+				383C6E6A2D3502710096930F /* AWSS3 */,
+			);
 			productName = FurFinder;
 			productReference = 383F6B7B2D2B9A520019A6E9 /* FurFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 383F6B722D2B9A520019A6E9;
+			packageReferences = (
+				383F6B8C2D2B9DDF0019A6E9 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
 			productRefGroup = 383F6B7C2D2B9A520019A6E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +256,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386E37612D718E7D00368086 /* furfinder-breed.png in Resources */,
+				386E375F2D718E7D00368086 /* furfinder-breed-list.png in Resources */,
+				386E37592D7183AE00368086 /* fur-finder-icon.png in Resources */,
 				383F6B862D2B9A550019A6E9 /* Preview Assets.xcassets in Resources */,
+				386E37602D718E7D00368086 /* furfinder-add-breed.png in Resources */,
+				386E37622D718E7D00368086 /* furfinder-home.png in Resources */,
 				383F6B832D2B9A550019A6E9 /* Assets.xcassets in Resources */,
+				386E37632D718E7D00368086 /* furfinder-walkthrough.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +274,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38063CA92D39FEA4002C7126 /* CapsuleView.swift in Sources */,
+				383F6B9B2D2BA3AF0019A6E9 /* BreedsService.swift in Sources */,
+				383F6B9E2D2BA3F40019A6E9 /* Secrets.swift in Sources */,
+				383F6BA62D2BBCEA0019A6E9 /* BreedPageView.swift in Sources */,
+				383F6B992D2B9F6D0019A6E9 /* FurFinderBreed.swift in Sources */,
+				383F6BA42D2BBCB20019A6E9 /* HomePageView.swift in Sources */,
+				383F6BAD2D2BF9F80019A6E9 /* AddBreedSheetView.swift in Sources */,
 				383F6B812D2B9A520019A6E9 /* ContentView.swift in Sources */,
+				38063CAB2D3A3EA8002C7126 /* Completion.swift in Sources */,
 				383F6B7F2D2B9A520019A6E9 /* FurFinderApp.swift in Sources */,
+				383F6BAB2D2BF7CF0019A6E9 /* CapturedSheetView.swift in Sources */,
+				38063CA72D39D505002C7126 /* SearchBar.swift in Sources */,
+				383F6BA82D2BBD150019A6E9 /* BreedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,16 +423,17 @@
 				DEVELOPMENT_TEAM = W8WDUK8Q48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FurFinder;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.mhoppitt.FurFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -304,16 +453,17 @@
 				DEVELOPMENT_TEAM = W8WDUK8Q48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FurFinder;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.mhoppitt.FurFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +494,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		383F6B8C2D2B9DDF0019A6E9 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.38.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		383C6E6A2D3502710096930F /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 383F6B8C2D2B9DDF0019A6E9 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSS3;
+		};
+		383F6B912D2B9DDF0019A6E9 /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 383F6B8C2D2B9DDF0019A6E9 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSDynamoDB;
+		};
+		383F6B932D2B9DDF0019A6E9 /* AWSSNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 383F6B8C2D2B9DDF0019A6E9 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSNS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 383F6B732D2B9A520019A6E9 /* Project object */;
 }
