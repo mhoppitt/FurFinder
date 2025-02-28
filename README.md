@@ -35,7 +35,7 @@ FurFinder is a fun and interactive app designed to get you outdoors and connect 
 </p>
 
 ## Demo Video
-<img src="docs/hoppitt-calendar-walkthrough.gif" alt="Walkthrough Video" width="200"/>
+<img src="docs/furfinder-walkthrough.gif" alt="Walkthrough Video" width="200"/>
 
 
 ## Installation
