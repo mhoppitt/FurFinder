@@ -56,7 +56,7 @@ struct AddBreedSheetView: View {
                         .bold()
                         .disabled(name.isEmpty || age.isEmpty || funFact.isEmpty || sex.isEmpty || location.isEmpty)
                 }.frame(maxWidth: .infinity, alignment: .trailing)
-            }
+            }.padding(.horizontal, 20)
             Form {
                 HStack {
                     Text("Breed").bold()
@@ -144,17 +144,19 @@ struct AddBreedSheetView: View {
                         }
                     }) {
                         Text("Delete Friend")
-                            .frame(maxWidth: .infinity, maxHeight: 30)
+                            .padding(.vertical, 5)
+                            .frame(maxWidth: .infinity, alignment: .center)
                     }
-                    .buttonStyle(.bordered)
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.accentColor)
+                    .clipShape(.rect(cornerRadius: 20))
                     .listRowInsets(EdgeInsets())
-                    .background(Color(UIColor.systemGroupedBackground))
+                    .listRowBackground(Color.clear)
                 }
             }
-            .padding(-16)
         }
-        .padding()
-        .padding(.top, 10)
+        .padding(.top, 20)
         .background(colorScheme == .dark ? SwiftUI.Color.init(red: 0.11, green: 0.11, blue: 0.11) : SwiftUI.Color.init(red: 0.95, green: 0.95, blue: 0.97))
         .preferredColorScheme(colorScheme)
         .task {
@@ -179,5 +181,5 @@ extension Image {
 }
 
 #Preview {
-    AddBreedSheetView(breed: FurFinderBreed(id: "AlaskanHusky", breedName: "Alaskan Husky", isCaptured: false, details: DogDetails(id: "", name: "", dateTaken: Date(), age: "", funFact: "", sex: "", location: "")))
+    AddBreedSheetView(breed: FurFinderBreed(id: "AlaskanHusky", breedName: "Alaskan Husky", isCaptured: false, details: DogDetails(id: "", name: "", dateTaken: Date(), age: "", funFact: "", sex: "", location: "")), isEdit: true)
 }

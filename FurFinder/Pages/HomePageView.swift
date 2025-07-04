@@ -34,8 +34,8 @@ struct HomePageView: View {
                     Text("Next")
                         .bold()
                         .padding(10)
-                        .padding(.leading, 20)
-                        .padding(.trailing, 20)
+                        .padding(.leading, 30)
+                        .padding(.trailing, 30)
                 }
                 .font(.title)
                 .buttonStyle(.borderedProminent)

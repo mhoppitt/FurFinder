@@ -20,46 +20,70 @@ struct CapturedSheetView: View {
     @Binding var isPresentingCapturedBreed: FurFinderBreed?
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Button(action: {
                 dismiss()
             }) {
                 Text("Cancel")
-            }.frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.top, 5)
+            .padding(.bottom)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            VStack {
+                AsyncImage(url: URL(string: presignedUrl)) { result in
+                    result.image?
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 300, height: 300)
+                        .cornerRadius(16)
+                }
+                Text(breed.details.name)
+                    .font(.largeTitle)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                Text(breed.breedName)
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+            }.frame(maxWidth: .infinity, alignment: .center)
             Spacer()
-            AsyncImage(url: URL(string: presignedUrl)) { result in
-                result.image?
-                    .resizable()
-                    .scaledToFill()
-            }.frame(width: 300, height: 300)
-            HStack {
-                VStack {
-                    Text(breed.details.name)
-                        .font(.largeTitle)
-                        .bold()
-                        .multilineTextAlignment(.center)
-                    Text(breed.breedName)
+            VStack(alignment: .leading) {
+                HStack(spacing: 10) {
+                    Image(systemName: "calendar")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .padding(10)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                    Text("Snapped on \(breed.details.dateTaken.formatted(date: .abbreviated, time: .omitted))")
+                }
+                HStack(spacing: 10) {
+                    Image(systemName: "clock")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .padding(10)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                    Text(breed.details.age)
+                }
+                HStack(spacing: 10) {
+                    Text(breed.details.sex == "Male" ? "\u{2642}" : "\u{2640}")
                         .font(.title2)
-                        .multilineTextAlignment(.center)
+                        .frame(width: 20, height: 20)
+                        .padding(10)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                    Text(breed.details.sex)
                 }
-                Spacer()
-                HStack {
-                    Capsule()
-                        .fill(Color.accentColor)
-                        .opacity(0.3)
-                        .overlay(
-                            Text(breed.details.dateTaken.formatted(date: .abbreviated, time: .omitted))
-                        )
-                        .frame(width: 150)
-                }.frame(height: 50)
-            }.padding()
-            Spacer()
-                HStack {
-                    CapsuleView(imageName: "calendar.circle.fill", displayText: breed.details.age)
-                    CapsuleView(imageName: "pawprint.circle.fill", displayText: breed.details.sex)
-                    CapsuleView(imageName: "location.circle.fill", displayText: breed.details.location)
+                HStack(spacing: 10) {
+                    Image(systemName: "location")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .padding(10)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                    Text(breed.details.location)
                 }
-            CapsuleView(imageName: "dog.circle.fill", displayText: breed.details.funFact)
+            }
             Spacer()
             Button(action: {
                 withAnimation {
@@ -68,15 +92,16 @@ struct CapturedSheetView: View {
                 }
             }) {
                 Text("Edit Friend")
-                    .frame(maxWidth: .infinity, maxHeight: 30)
+                    .padding(.vertical, 5)
+                    .frame(maxWidth: .infinity, alignment: .center)
             }
-            .buttonStyle(.bordered)
-            .listRowInsets(EdgeInsets())
-            .background(Color(UIColor.systemGroupedBackground))
+            .font(.title3)
+            .buttonStyle(.borderedProminent)
+            .tint(.accentColor)
+            .clipShape(.rect(cornerRadius: 20))
             Spacer()
         }
-        .padding()
-        .padding(.top, 13)
+        .padding(20)
         .task {
             do {
                 presignedUrl = try await breedsService.getPresignedUrl(breedName: breed.id)
@@ -87,6 +112,6 @@ struct CapturedSheetView: View {
     }
 }
 
-//#Preview {
-//    CapturedSheetView(breed: FurFinderBreed(id: "AlaskanHusky", breedName: "Alaskan Husky", isCaptured: true, details: DogDetails(id: "dogId", name: "Buddy", dateTaken: Date(), age: "1 year", funFact: "funFac cwdjkhfw cdwuihcwbcw cuibc scq qsxubxq qwdkubqxsdhlds cduhilcdjkcdw cdwuilcdw t", sex: "Male", location: "Sydney CBD")), presignedUrl: "")
-//}
+#Preview {
+    CapturedSheetView(breed: FurFinderBreed(id: "AlaskanHusky", breedName: "Alaskan Husky", isCaptured: true, details: DogDetails(id: "dogId", name: "Buddy", dateTaken: Date(), age: "1 year", funFact: "", sex: "Male", location: "Sydney CBD")), presignedUrl: "", isPresentingEditBreed: .constant(.none), isPresentingCapturedBreed: .constant(.none))
+}
