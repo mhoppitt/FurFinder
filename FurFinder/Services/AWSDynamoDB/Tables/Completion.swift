@@ -8,11 +8,11 @@
 import Foundation
 
 public struct Completion: Codable {
-    var completionRate: String
+    var completionRate: Float
     var completed: Int
     var total: Int
     
-    init(completionRate: String, completed: Int, total: Int) {
+    init(completionRate: Float, completed: Int, total: Int) {
         self.completionRate = completionRate
         self.completed = completed
         self.total = total

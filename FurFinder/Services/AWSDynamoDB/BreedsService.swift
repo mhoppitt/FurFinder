@@ -230,11 +230,10 @@ public class BreedsService {
         // Calculate the percentage
         let totalBreeds = allBreeds.count
         guard totalBreeds > 0 else {
-            return Completion(completionRate: "0", completed: 0, total: 0)
+            return Completion(completionRate: 0.00, completed: 0, total: 0)
         } // Avoid division by zero
             
-        let completionPercentage = (Double(capturedBreeds.count) / Double(totalBreeds)) * 100.0
-        let completionRate = String(format: "%.2f", completionPercentage)
-        return Completion(completionRate: completionRate, completed: capturedBreeds.count, total: totalBreeds)
+        let completionPercentage = Double(capturedBreeds.count) / Double(totalBreeds)
+        return Completion(completionRate: Float(completionPercentage), completed: capturedBreeds.count, total: totalBreeds)
     }
 }

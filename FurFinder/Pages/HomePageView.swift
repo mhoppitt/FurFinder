@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePageView: View {
     var breedsService = BreedsService()
     
-    @State var completion: Completion = Completion(completionRate: "0.00", completed: 0, total: 0)
+    @State var completion: Completion = Completion(completionRate: 0.00, completed: 0, total: 0)
     
     var body: some View {
         NavigationView {
@@ -42,16 +42,19 @@ struct HomePageView: View {
                 .tint(.accentColor)
                 .clipShape(.rect(cornerRadius: 30))
                 Spacer()
-                if (completion.completionRate == "0.00") {
+                if (completion.completionRate == 0.00) {
                     Spacer()
                 } else {
-                    VStack {
-                        Text("\(completion.completed)/\(completion.total)")
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .padding(.trailing, 10)
-                        Text("Completed \(completion.completionRate)%")
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .padding(.trailing, 10)
+                    HStack {
+                        Spacer()
+                        VStack(alignment: .leading) {
+                            ProgressView(value: completion.completionRate)
+                                .scaleEffect(x: 1, y: 1.5)
+                            Text("\(completion.completed)/\(completion.total) (\(String(format: "%.2f", completion.completionRate * 100))%)")
+                                .foregroundColor(.secondary)
+                            
+                        }
+                        Spacer()
                     }
                 }
             }
@@ -68,5 +71,5 @@ struct HomePageView: View {
 }
 
 #Preview {
-    HomePageView(completion: Completion(completionRate: "20.00", completed: 1, total: 5))
+    HomePageView(completion: Completion(completionRate: 0.2, completed: 1, total: 5))
 }
